@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dygine - Dynamic Engine | Web, Mobile, AI &amp; Automation Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web development, mobile app development, AI automation, SaaS, CRM, ERP, software solutions, Bengaluru, India" name="keywords">
+    <meta content="Dygine (Dynamic Engine) - We build AI-powered platforms, SaaS products, mobile apps, ERP/CRM systems, and modern digital experiences for startups and businesses worldwide." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-cogs fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- ====== NEW HEADER START (replaces topbar + brand bar + blue navbar) ====== -->
+    <header class="dy-header" id="dyHeader">
+        <div class="dy-header-inner">
+            <a href="index.html" class="dy-logo">
+    <img src="img/logo.png" alt="Dygine" style="height: 45px; width: auto; border-radius: 8px;">
+    <span>DYGINE</span>
+</a>
+
+            <button class="dy-burger" id="dyBurger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="dy-right" id="dyRight">
+                <ul class="dy-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="dy-meta">
+                    <div class="dy-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <span class="dy-dot">·</span>
+                    <a href="mailto:hello@dygine.com" class="dy-email">hello@dygine.com</a>
+                </div>
+            </div>
+
+            <a href="contact.html" class="dy-cta">Book a Call <i class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </header>
+    <!-- ====== NEW HEADER END ====== -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 m-0">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Image">
+                </button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Image">
+                </button>
+                <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
+                    <img class="img-fluid" src="img/carousel-3.jpg" alt="Image">
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Web Development Services">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">Building the Future with Software &amp; Automation</h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn" id="heroTypewriter" style="min-height:200px;"></h1>
+                            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-4 animated zoomIn px-5">Start Your Project →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Mobile App Development">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">SaaS, CRM, ERP &amp; Custom Software</h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn typewriter-h1" style="min-height:200px;"></h1>
+                            <a href="services.html" class="btn btn-primary btn-lg rounded-pill mt-4 animated zoomIn px-5">Explore Services →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-3.jpg" alt="AI and Automation">
+                    <div class="carousel-caption">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4 animated zoomIn">AI Agents &amp; Business Automation</h4>
+                            <h1 class="display-1 text-white mb-0 animated zoomIn typewriter-h1" style="min-height:200px;"></h1>
+                            <a href="contact.html" class="btn btn-primary btn-lg rounded-pill mt-4 animated zoomIn px-5">Book a Call →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Trust Bar Start -->
+    <div class="container-xxl py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <p class="text-center text-secondary mb-4 small text-uppercase" style="letter-spacing: 3px;">Trusted by innovative businesses worldwide</p>
+            <div class="row g-4 align-items-center justify-content-around text-center">
+                <div class="col-6 col-md-2"><h4 class="text-secondary fw-bold mb-0"><i class="fa fa-cube me-2"></i>NovaTech</h4></div>
+                <div class="col-6 col-md-2"><h4 class="text-secondary fw-bold mb-0"><i class="fa fa-sync-alt me-2"></i>Syncronix</h4></div>
+                <div class="col-6 col-md-2"><h4 class="text-secondary fw-bold mb-0"><i class="fa fa-microchip me-2"></i>ByteCore</h4></div>
+                <div class="col-6 col-md-2"><h4 class="text-secondary fw-bold mb-0"><i class="fa fa-bolt me-2"></i>FluxAI</h4></div>
+                <div class="col-6 col-md-2"><h4 class="text-secondary fw-bold mb-0"><i class="fa fa-cloud me-2"></i>CloudEdge</h4></div>
+            </div>
+        </div>
+    </div>
+    <!-- Trust Bar End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded text-center h-100" style="border-color:#2563EB !important;">
+                        <i class="fa fa-code fa-2x text-primary mb-2"></i>
+                        <p class="mb-0 fw-bold">Clean Code</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded text-center h-100" style="border-color:#2563EB !important;">
+                        <i class="fa fa-rocket fa-2x text-primary mb-2"></i>
+                        <p class="mb-0 fw-bold">Fast Delivery</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded text-center h-100" style="border-color:#2563EB !important;">
+                        <i class="fa fa-shield-alt fa-2x text-primary mb-2"></i>
+                        <p class="mb-0 fw-bold">Secure Systems</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded text-center h-100" style="border-color:#2563EB !important;">
+                        <i class="fa fa-headset fa-2x text-primary mb-2"></i>
+                        <p class="mb-0 fw-bold">24/7 Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="img/about.jpg" alt="About Dygine">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <h1 class="display-6 mb-4">The <span class="text-primary">Dynamic Engine</span> Behind Your Digital Success</h1>
+                        <p>Dygine — short for Dynamic Engine — is a full-service software company building the platforms that power tomorrow's businesses. We combine modern engineering, AI automation, and refined design to ship products that don't just work — they compound.</p>
+                        <p class="mb-4">From early-stage MVPs to enterprise transformations, we partner with founders and operators who want to move faster than the market. Every system we build is engineered for scale, automation, and the next decade — not the last one.</p>
+                        
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="about.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-light text-center text-primary px-3">Services</h6>
+                <h1 class="display-6 mb-4">Everything a Modern Software Company Needs</h1>
+                <p class="mb-0">From AI agents to enterprise SaaS — we ship the entire stack, designed, engineered, and automated.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-robot text-white"></i></div>
+                        <h5 class="mb-2">AI Automation</h5>
+                        <p class="mb-0 small text-secondary">Custom AI agents that automate workflows and decisions end-to-end.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-cloud text-white"></i></div>
+                        <h5 class="mb-2">SaaS Development</h5>
+                        <p class="mb-0 small text-secondary">Multi-tenant platforms with billing, auth, and dashboards — engineered to scale.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-globe text-white"></i></div>
+                        <h5 class="mb-2">Website Development</h5>
+                        <p class="mb-0 small text-secondary">High-performance marketing sites and web apps with cinematic UX.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-mobile-alt text-white"></i></div>
+                        <h5 class="mb-2">Mobile App Development</h5>
+                        <p class="mb-0 small text-secondary">Native iOS and Android apps with pixel-perfect motion and offline-first design.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fab fa-android text-white"></i></div>
+                        <h5 class="mb-2">APK Development</h5>
+                        <p class="mb-0 small text-secondary">Production-ready Android packages with auto-update, push, and analytics.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-building text-white"></i></div>
+                        <h5 class="mb-2">Enterprise Software</h5>
+                        <p class="mb-0 small text-secondary">Mission-critical platforms with audit trails, RBAC, and 99.99% uptime SLAs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-users text-white"></i></div>
+                        <h5 class="mb-2">CRM &amp; ERP Systems</h5>
+                        <p class="mb-0 small text-secondary">Custom CRM and ERP platforms tailored to your operations — not the other way around.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-code-branch text-white"></i></div>
+                        <h5 class="mb-2">API Integrations</h5>
+                        <p class="mb-0 small text-secondary">Robust integrations with payments, shipping, AI, and any third-party.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-pen-nib text-white"></i></div>
+                        <h5 class="mb-2">UI / UX Design</h5>
+                        <p class="mb-0 small text-secondary">Interfaces that feel as good as they look. Researched, prototyped, tested.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-server text-white"></i></div>
+                        <h5 class="mb-2">Cloud Solutions</h5>
+                        <p class="mb-0 small text-secondary">Auto-scaling infrastructure on AWS, GCP, and Azure — set up to grow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-brain text-white"></i></div>
+                        <h5 class="mb-2">AI Agents</h5>
+                        <p class="mb-0 small text-secondary">Autonomous agents that handle support, sales, research, and workflows 24/7.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-block rounded text-center h-100 p-4 bg-white">
+                        <div class="btn-lg-square bg-primary rounded-circle mx-auto mb-3"><i class="fa fa-cogs text-white"></i></div>
+                        <h5 class="mb-2">Business Automation</h5>
+                        <p class="mb-0 small text-secondary">Eliminate the manual layer — invoicing, reporting, ops, finance — fully automated.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="services.html">View All Services</a>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Why Choose Us Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Why Choose Us</h6>
+                <h1 class="display-6 mb-4">Built Different. On Purpose.</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-bolt fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Fast Development</h5>
+                        <p class="mb-0">Production-grade MVPs in weeks, not quarters. Startup speed without skipping the engineering.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-layer-group fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Scalable Architecture</h5>
+                        <p class="mb-0">Cloud-native systems that handle 10× growth without breaking — designed for the day after launch.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-paint-brush fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Modern UI / UX</h5>
+                        <p class="mb-0">Interfaces that feel inevitable. Pixel-perfect, motion-driven, ruthlessly tested with real users.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-handshake fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">End-to-End</h5>
+                        <p class="mb-0">From strategy to launch to maintenance — one team owns it. No agency hand-offs. No surprises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-light text-center text-primary px-3">Our Process</h6>
+                <h1 class="display-6 mb-4">From Idea to Infinity</h1>
+                <p class="mb-0">A six-step engineering rhythm that delivers production software — predictably.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">01</div>
+                        <i class="fa fa-lightbulb fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Idea Discussion</h5>
+                        <p class="mb-0 small">We dive deep into your vision, market, and constraints to map the full opportunity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">02</div>
+                        <i class="fa fa-chess fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Planning &amp; Strategy</h5>
+                        <p class="mb-0 small">Architecture, tech stack, milestones, and KPIs — locked in before a line of code is written.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">03</div>
+                        <i class="fa fa-palette fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">UI / UX Design</h5>
+                        <p class="mb-0 small">High-fidelity prototypes in Figma — interactive, branded, and ready to validate.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">04</div>
+                        <i class="fa fa-laptop-code fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Development</h5>
+                        <p class="mb-0 small">Two-week sprints, continuous deploys, and a Slack channel where you see every commit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">05</div>
+                        <i class="fa fa-vial fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Testing</h5>
+                        <p class="mb-0 small">Automated QA, load testing, security audits — your platform ships hardened.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="process-step bg-white rounded p-4 h-100 position-relative">
+                        <div class="process-num">06</div>
+                        <i class="fa fa-rocket fa-2x text-primary mb-3"></i>
+                        <h5 class="mb-2">Launch &amp; Support</h5>
+                        <p class="mb-0 small">Go-live with full handover, plus ongoing optimization and 24/7 monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Portfolio</h6>
+                <h1 class="display-6 mb-4">Recent Launches</h1>
+                <p class="mb-0">A snapshot of what we've shipped across AI, SaaS, mobile, and enterprise.</p>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-1.jpg" alt="AI CRM Platform">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-1.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">AI &middot; SaaS</p>
+                            <h5 class="lh-base mb-0">AI CRM Platform</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Predictive CRM with auto-scoring leads and AI-driven email sequences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-2.jpg" alt="Gym Management SaaS">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-2.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">SaaS &middot; Mobile</p>
+                            <h5 class="lh-base mb-0">Gym Management SaaS</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Multi-branch platform with member tracking, billing, and trainer scheduling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-3.jpg" alt="Delivery Tracking App">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-3.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Mobile &middot; Logistics</p>
+                            <h5 class="lh-base mb-0">Delivery Tracking App</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Real-time courier tracking with route optimization and proof-of-delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-4.jpg" alt="AI Chatbot Dashboard">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-4.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">AI &middot; Chatbot</p>
+                            <h5 class="lh-base mb-0">AI Chatbot Dashboard</h5>
+                            <p class="mb-0 mt-2 small text-secondary">No-code chatbot builder with intent detection, handoffs, and analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-5.jpg" alt="Restaurant Ordering System">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-5.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">F&amp;B &middot; POS</p>
+                            <h5 class="lh-base mb-0">Restaurant Ordering System</h5>
+                            <p class="mb-0 mt-2 small text-secondary">QR-code dine-in ordering with kitchen display, payments, and live analytics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-6.jpg" alt="ERP Platform">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-6.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Enterprise &middot; ERP</p>
+                            <h5 class="lh-base mb-0">ERP Platform</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Multi-branch ERP with finance, HR, inventory, and reporting modules.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-7.jpg" alt="Inventory Management System">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-7.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Inventory &middot; Cloud</p>
+                            <h5 class="lh-base mb-0">Inventory Management</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Multi-warehouse SKU control with barcode scanning and demand forecasting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-item">
+                        <div class="position-relative overflow-hidden rounded">
+                            <img class="img-fluid w-100" src="img/project-8.jpg" alt="Automation Dashboard">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/project-8.jpg" data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light p-4">
+                            <p class="text-primary fw-medium mb-2">Automation &middot; AI</p>
+                            <h5 class="lh-base mb-0">Automation Dashboard</h5>
+                            <p class="mb-0 mt-2 small text-secondary">Visual workflow builder that connects 100+ apps with AI-driven triggers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Stats Counter Start -->
+    <div class="container-fluid bg-primary py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center text-white wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check-circle fa-3x mb-3"></i>
+                    <h1 class="display-4 fw-bold text-white"><span class="counter-value" data-toggle="counter-up">50</span>+</h1>
+                    <p class="text-white mb-0 text-uppercase" style="letter-spacing:2px;">Projects Delivered</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center text-white wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-cogs fa-3x mb-3"></i>
+                    <h1 class="display-4 fw-bold text-white"><span class="counter-value" data-toggle="counter-up">20</span>+</h1>
+                    <p class="text-white mb-0 text-uppercase" style="letter-spacing:2px;">Automation Systems</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center text-white wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-cloud fa-3x mb-3"></i>
+                    <h1 class="display-4 fw-bold text-white"><span class="counter-value" data-toggle="counter-up">10</span>+</h1>
+                    <p class="text-white mb-0 text-uppercase" style="letter-spacing:2px;">SaaS Platforms</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center text-white wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-globe fa-3x mb-3"></i>
+                    <h1 class="display-4 fw-bold text-white"><span class="counter-value" data-toggle="counter-up">15</span>+</h1>
+                    <p class="text-white mb-0 text-uppercase" style="letter-spacing:2px;">Global Clients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Stats Counter End -->
+
+
+   
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-light text-center text-primary px-3">Testimonials</h6>
+                <h1 class="display-6 mb-4">Loved by Operators</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Arjun Rao</h5>
+                            <span>CTO, NovaTech</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Dygine shipped our AI dashboard in six weeks. The codebase is cleaner than what our in-house team produces in a year. They're the real deal.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Sara Kim</h5>
+                            <span>VP Engineering, Syncronix</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">We migrated our entire ERP to a Dygine-built platform. Zero downtime, three weeks ahead of schedule, and the team actually understands business operations.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Marcus Johnson</h5>
+                            <span>Founder, FluxAI</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Their AI agents handle 80% of our customer support now. Response time dropped from hours to seconds. CSAT went up. I keep wondering what took us so long.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Priya Tandon</h5>
+                            <span>CEO, ByteCore</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">From a one-line idea to a fully working SaaS in production in under two months. Dygine is what every founder hopes their tech partner is.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- CTA Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="bg-primary rounded p-5 text-center text-white wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-5 text-white mb-3">Have a Project Worth Building?</h1>
+                <p class="text-white mb-4">Tell us what you're working on. We'll respond within 24 hours with next steps — no sales theatre, no slow funnel.</p>
+                <a href="contact.html" class="btn btn-light rounded-pill py-3 px-5">Start Your Project →</a>
+            </div>
+        </div>
+    </div>
+    <!-- CTA End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bengaluru, Karnataka, India</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 98765 43210</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hello@dygine.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="services.html">Our Services</a>
+                    <a class="btn btn-link" href="#">Terms &amp; Conditions</a>
+                    <a class="btn btn-link" href="contact.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-1.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-2.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-3.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-4.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-5.jpg" alt=""></div>
+                        <div class="col-4"><img class="img-fluid rounded" src="img/project-6.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Get tech insights, project updates, and offers straight to your inbox.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2026 <a href="#">Dygine</a>, All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        Powered by <a href="#">Dynamic Engine</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Typewriter Animation (all 3 slides, slow→fast) -->
+<script>
+(function () {
+    var texts = [
+        'We Engineer AI-Powered Platforms for Modern Business',
+        'Scalable Platforms for Startups & Enterprises',
+        'Intelligent Systems That Work for You 24/7'
+    ];
+
+    // Add cursor blink CSS
+    var s = document.createElement('style');
+    s.textContent = '@keyframes tyBlink{0%,100%{opacity:1}50%{opacity:0}}';
+    document.head.appendChild(s);
+
+    // Create cursor element
+    function makeCursor() {
+        var c = document.createElement('span');
+        c.textContent = '|';
+        c.style.cssText = 'animation:tyBlink .8s steps(2) infinite;margin-left:4px;font-weight:300;';
+        return c;
+    }
+
+    // Typewriter: starts slow (150ms) → speeds up (30ms)
+    function typeText(el, text) {
+        var i = 0;
+        var len = text.length;
+        var cursor = makeCursor();
+
+        function type() {
+            el.textContent = text.slice(0, i);
+            el.appendChild(cursor);
+            i++;
+            if (i <= len) {
+                // Slow at start (150ms), fast at end (30ms)
+                var speed = 150 - Math.floor((i / len) * 120);
+                setTimeout(type, speed);
+            }
+        }
+        type();
+    }
+
+    // Get all 3 slide h1 elements
+    var firstH1 = document.getElementById('heroTypewriter');
+    var otherH1s = document.querySelectorAll('.typewriter-h1');
+
+    // Map: slide index → { element, text }
+    var slides = [];
+    if (firstH1) slides.push({ el: firstH1, text: texts[0] });
+    otherH1s.forEach(function (el, idx) {
+        slides.push({ el: el, text: texts[idx + 1] });
+    });
+
+    // Type first slide on page load
+    if (slides[0]) {
+        setTimeout(function () { typeText(slides[0].el, slides[0].text); }, 600);
+    }
+
+    // Type on every slide change
+    var carousel = document.getElementById('header-carousel');
+    if (carousel) {
+        carousel.addEventListener('slid.bs.carousel', function (e) {
+            var idx = e.to;
+            if (slides[idx]) {
+                typeText(slides[idx].el, slides[idx].text);
+            }
+        });
+    }
+})();
+</script>
+
+    <!-- ====== NEW HEADER JS (hide on scroll down, show on scroll up) ====== -->
+    <script>
+        (function () {
+            var header = document.getElementById('dyHeader');
+            var burger = document.getElementById('dyBurger');
+            var rightSide = document.getElementById('dyRight');
+            if (!header) return;
+
+            // Hide on scroll down, show on scroll up
+            var lastY = 0;
+            var ticking = false;
+            function onScroll() {
+                var y = window.pageYOffset;
+                if (y > 30) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+
+                if (y > lastY && y > 120) {
+                    header.classList.add('dy-hidden');
+                } else {
+                    header.classList.remove('dy-hidden');
+                }
+                lastY = y;
+                ticking = false;
+            }
+            window.addEventListener('scroll', function () {
+                if (!ticking) {
+                    window.requestAnimationFrame(onScroll);
+                    ticking = true;
+                }
+            }, { passive: true });
+
+            // Mobile burger toggle
+            if (burger && rightSide) {
+                burger.addEventListener('click', function () {
+                    rightSide.classList.toggle('open');
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>
