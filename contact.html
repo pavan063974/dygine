@@ -53,7 +53,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <span class="dy-dot">·</span>
-                <a href="mailto:hello@dygine.com" class="dy-email">hello@dygine.com</a>
+                <a href="mailto:notification@dygine.com" class="dy-email">notification@dygine.com</a>
             </div>
         </div>
         <a href="contact.html" class="dy-cta">Book a Call <i class="fa fa-arrow-right ms-2"></i></a>
@@ -98,7 +98,7 @@
                             <i class="fa fa-envelope text-white"></i>
                         </div>
                         <h4>Email Us</h4>
-                        <p class="mb-0">support@dygine.com<br>hello@dygine.com</p>
+                        <p class="mb-0">support@dygine.com<br>notification@dygine.com</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -210,7 +210,7 @@
                     <h5 class="text-light mb-4">Address</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bengaluru, Karnataka, India</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 98765 43210</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hello@dygine.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>notification@dygine.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -272,6 +272,39 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('4ejFXiWU53nIY1k3D');
+
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const btn = this.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    emailjs.send('service_21trkr7', 'template_19mx8ks', {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      company: document.getElementById('company').value,
+      title: document.getElementById('subject').value,
+      message: document.getElementById('message').value,
+    })
+    .then(function() {
+      btn.textContent = 'Message Sent! ✅';
+      btn.style.background = 'green';
+      document.querySelector('form').reset();
+    })
+    .catch(function(error) {
+      btn.textContent = 'Failed! Try Again ❌';
+      btn.disabled = false;
+      console.error(error);
+    });
+  });
+</script>
 
     <script>
 (function () {
