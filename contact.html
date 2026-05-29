@@ -286,17 +286,21 @@
     btn.disabled = true;
 
     emailjs.send('service_21trkr7', 'template_19mx8ks', {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value,
-      company: document.getElementById('company').value,
-      title: document.getElementById('subject').value,
-      message: document.getElementById('message').value,
-    })
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  phone: document.getElementById('phone').value,
+  company: document.getElementById('company').value,
+  service: document.getElementById('service').value,
+  budget: document.getElementById('budget').value,
+  title: document.getElementById('subject').value,
+  message: document.getElementById('message').value,
+})
     .then(function() {
-      btn.textContent = 'Message Sent! ✅';
-      btn.style.background = 'green';
       document.querySelector('form').reset();
+      btn.textContent = 'Send Message';
+      btn.disabled = false;
+      // Show popup
+      document.getElementById('successPopup').style.display = 'flex';
     })
     .catch(function(error) {
       btn.textContent = 'Failed! Try Again ❌';
@@ -330,6 +334,26 @@
     }
 })();
 </script>
+
+<!-- Success Popup -->
+<div id="successPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:99999; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:20px; padding:50px 40px; max-width:480px; width:90%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3); animation: popIn 0.4s ease;">
+    <div style="width:80px; height:80px; background:#2563EB; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 24px;">
+      <i class="fa fa-check" style="color:#fff; font-size:36px;"></i>
+    </div>
+    <h2 style="color:#1f2937; margin-bottom:12px;">Thank You! 🎉</h2>
+    <p style="color:#6b7280; font-size:16px; margin-bottom:8px;">We've received your message.</p>
+    <p style="color:#6b7280; font-size:16px; margin-bottom:30px;">Our team will get back to you within <strong>24 hours</strong>. Let's build something great together! 🚀</p>
+    <button onclick="document.getElementById('successPopup').style.display='none'" style="background:#2563EB; color:#fff; border:none; padding:14px 40px; border-radius:100px; font-size:16px; font-weight:600; cursor:pointer;">Got it! 👍</button>
+  </div>
+</div>
+
+<style>
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+</style>
 </body>
 
 </html>
